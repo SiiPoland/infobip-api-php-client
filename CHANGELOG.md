@@ -1,5 +1,12 @@
 # Change Log of `infobip-api-php-client`
 
+## [3.1.2] - 2022-04-11
+
+### Added
+- Support for WhatsApp messaging
+- `README.md` which contains necessary data and examples for quickstart [https://www.infobip.com/docs/api#channels/whatsapp]
+- Support for number cofiguration [https://www.infobip.com/docs/api#platform-connectivity/numbers/modify-sms-configurations]
+
 All notable changes to the library will be documented in this file.
 
 The format of the file is based on [Keep a Changelog](http://keepachangelog.com/) and this library adheres to [Semantic Versioning](http://semver.org/) as mentioned in [README.md][readme] file.
