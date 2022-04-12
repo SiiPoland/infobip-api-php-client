@@ -1,7 +1,7 @@
 {
     "name": "siipoland/infobip-api-php-client",
     "description": "PHP library for consuming Infobip's API",
-    "version": "3.1.1",
+    "version": "3.1.2",
     "keywords": [
         "infobip",
         "sms",
@@ -22,6 +22,14 @@
             "name": "Infobip Support",
             "email": "support@infobip.com",
             "homepage": "https://www.infobip.com"
+        },
+        {
+            "name": "Patryk Święczkowski",
+            "email": "pswieczkowski@sii.pl"
+        },
+        {
+            "name": "Marcin Bach",
+            "email": "mbach@sii.pl"
         }
     ],
     "require": {

@@ -35,7 +35,7 @@ All versions above 7.2
 To start using the library add it as dependecy in your `composer.json` file like shown below.
 ```json
 "require": {
-	"siipoland/infobip-api-php-client": "3.1.1"
+	"infobip/infobip-api-php-client": "3.0.0"
 }
 ```
 And simply run `composer install` to download dependencies.
