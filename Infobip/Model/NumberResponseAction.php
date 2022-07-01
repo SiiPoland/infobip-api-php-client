@@ -43,7 +43,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class NumberResponseAction implements ModelInterface, ArrayAccess, \JsonSerializable
+class NumberResponseAction implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

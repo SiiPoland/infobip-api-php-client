@@ -37,7 +37,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SmsTextualMessage implements ModelInterface, ArrayAccess, \JsonSerializable
+class SmsTextualMessage implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 
@@ -222,9 +222,9 @@ class SmsTextualMessage implements ModelInterface, ArrayAccess, \JsonSerializabl
         return self::$openAPIModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values

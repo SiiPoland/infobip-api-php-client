@@ -42,7 +42,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class WhatsappMessage implements ModelInterface, ArrayAccess, \JsonSerializable
+class WhatsappMessage implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

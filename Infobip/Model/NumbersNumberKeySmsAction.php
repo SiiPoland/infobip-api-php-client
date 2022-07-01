@@ -42,7 +42,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class NumbersNumberKeySmsAction implements ModelInterface, ArrayAccess, \JsonSerializable
+class NumbersNumberKeySmsAction implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

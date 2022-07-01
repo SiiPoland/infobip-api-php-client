@@ -43,7 +43,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class WhatsappTemplateResponseStructureHeader implements ModelInterface, ArrayAccess, \JsonSerializable
+class WhatsappTemplateResponseStructureHeader implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

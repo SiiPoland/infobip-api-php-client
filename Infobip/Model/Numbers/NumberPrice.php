@@ -38,7 +38,7 @@ use Infobip\Model\ModelInterface;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class NumbersPrice implements ModelInterface, ArrayAccess, \JsonSerializable
+class NumbersPrice implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

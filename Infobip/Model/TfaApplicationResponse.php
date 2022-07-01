@@ -37,7 +37,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class TfaApplicationResponse implements ModelInterface, ArrayAccess, \JsonSerializable
+class TfaApplicationResponse implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 
@@ -172,9 +172,9 @@ class TfaApplicationResponse implements ModelInterface, ArrayAccess, \JsonSerial
         return self::$openAPIModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values

@@ -42,7 +42,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class ConfiguratonPayload implements ModelInterface, ArrayAccess, \JsonSerializable
+class ConfiguratonPayload implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

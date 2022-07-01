@@ -37,7 +37,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SmsSendingSpeedLimit implements ModelInterface, ArrayAccess, \JsonSerializable
+class SmsSendingSpeedLimit implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 
@@ -162,9 +162,9 @@ class SmsSendingSpeedLimit implements ModelInterface, ArrayAccess, \JsonSerializ
         return self::$openAPIModelName;
     }
 
-    
 
-    
+
+
 
     /**
      * Associative array for storing property values

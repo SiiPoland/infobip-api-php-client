@@ -35,7 +35,7 @@ use \Infobip\ObjectSerializer;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class SmsResponseDetails implements ModelInterface, ArrayAccess, \JsonSerializable
+class SmsResponseDetails implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 

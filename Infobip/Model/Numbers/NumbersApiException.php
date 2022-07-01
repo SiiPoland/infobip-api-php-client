@@ -38,7 +38,7 @@ use Infobip\Model\ModelInterface;
  * @template TKey int|null
  * @template TValue mixed|null
  */
-class NumbersApiException implements ModelInterface, ArrayAccess, \JsonSerializable
+class NumbersApiException implements ModelInterface
 {
     public const DISCRIMINATOR = null;
 
