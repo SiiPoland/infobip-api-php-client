@@ -1,7 +1,7 @@
 {
     "name": "siipoland/infobip-api-php-client",
     "description": "PHP library for consuming Infobip's API",
-    "version": "3.1.6",
+    "version": "3.1.7",
     "keywords": [
         "infobip",
         "sms",
@@ -37,7 +37,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^7.4.2"
+        "guzzlehttp/guzzle": "~6.5.5 || 7.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.12"
