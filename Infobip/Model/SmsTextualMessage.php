@@ -61,7 +61,7 @@ class SmsTextualMessage implements ModelInterface
         'from' => 'string',
         'intermediateReport' => 'bool',
         'language' => '\Infobip\Model\SmsLanguage',
-        'notifyContentType' => 'string',
+        'notifications' => 'array',
         'notifyUrl' => 'string',
         'regional' => '\Infobip\Model\SmsRegionalOptions',
         'sendAt' => '\DateTime',
@@ -85,7 +85,7 @@ class SmsTextualMessage implements ModelInterface
         'from' => null,
         'intermediateReport' => null,
         'language' => null,
-        'notifyContentType' => null,
+        'notifications' => null,
         'notifyUrl' => null,
         'regional' => null,
         'sendAt' => 'date-time',
@@ -128,7 +128,7 @@ class SmsTextualMessage implements ModelInterface
         'from' => 'from',
         'intermediateReport' => 'intermediateReport',
         'language' => 'language',
-        'notifyContentType' => 'notifyContentType',
+        'notifications' => 'notifications',
         'notifyUrl' => 'notifyUrl',
         'regional' => 'regional',
         'sendAt' => 'sendAt',
@@ -150,7 +150,7 @@ class SmsTextualMessage implements ModelInterface
         'from' => 'setFrom',
         'intermediateReport' => 'setIntermediateReport',
         'language' => 'setLanguage',
-        'notifyContentType' => 'setNotifyContentType',
+        'notifications' => 'setNotifications',
         'notifyUrl' => 'setNotifyUrl',
         'regional' => 'setRegional',
         'sendAt' => 'setSendAt',
@@ -172,7 +172,7 @@ class SmsTextualMessage implements ModelInterface
         'from' => 'getFrom',
         'intermediateReport' => 'getIntermediateReport',
         'language' => 'getLanguage',
-        'notifyContentType' => 'getNotifyContentType',
+        'notifications' => 'getNotifications',
         'notifyUrl' => 'getNotifyUrl',
         'regional' => 'getRegional',
         'sendAt' => 'getSendAt',
@@ -248,7 +248,7 @@ class SmsTextualMessage implements ModelInterface
         $this->container['from'] = $data['from'] ?? null;
         $this->container['intermediateReport'] = $data['intermediateReport'] ?? null;
         $this->container['language'] = $data['language'] ?? null;
-        $this->container['notifyContentType'] = $data['notifyContentType'] ?? null;
+        $this->container['notifications'] = $data['notifications'] ?? null;
         $this->container['notifyUrl'] = $data['notifyUrl'] ?? null;
         $this->container['regional'] = $data['regional'] ?? null;
         $this->container['sendAt'] = $data['sendAt'] ?? null;
@@ -450,25 +450,25 @@ class SmsTextualMessage implements ModelInterface
     }
 
     /**
-     * Gets notifyContentType
+     * Gets notifications
      *
-     * @return string|null
+     * @return array|null
      */
-    public function getNotifyContentType()
+    public function getNotifications()
     {
-        return $this->container['notifyContentType'];
+        return $this->container['notifications'];
     }
 
     /**
-     * Sets notifyContentType
+     * Sets notifications
      *
-     * @param string|null $notifyContentType Preferred Delivery report content type. Can be `application/json` or `application/xml`.
+     * @param array|null $notifications Preferred Delivery report content type. Can be `application/json` or `application/xml`.
      *
      * @return self
      */
-    public function setNotifyContentType($notifyContentType)
+    public function setNotifications($notifications)
     {
-        $this->container['notifyContentType'] = $notifyContentType;
+        $this->container['notifications'] = $notifications;
 
         return $this;
     }
