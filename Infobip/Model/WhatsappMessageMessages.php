@@ -63,7 +63,8 @@ class WhatsappMessageMessages implements ModelInterface
         'to' => 'string',
         'message_id' => 'string',
         'content' => '\Infobip\Model\WhatsappMessageContent',
-        'callback_data' => 'string'
+        'callback_data' => 'string',
+        'notify_url' => 'string'
     ];
 
     /**
@@ -78,7 +79,8 @@ class WhatsappMessageMessages implements ModelInterface
         'to' => null,
         'message_id' => null,
         'content' => null,
-        'callback_data' => null
+        'callback_data' => null,
+        'notify_url' => null
     ];
 
     /**
@@ -112,7 +114,8 @@ class WhatsappMessageMessages implements ModelInterface
         'to' => 'to',
         'message_id' => 'messageId',
         'content' => 'content',
-        'callback_data' => 'callbackData'
+        'callback_data' => 'callbackData',
+        'notify_url' => 'setNotifyUrl'
     ];
 
     /**
@@ -138,7 +141,8 @@ class WhatsappMessageMessages implements ModelInterface
         'to' => 'getTo',
         'message_id' => 'getMessageId',
         'content' => 'getContent',
-        'callback_data' => 'getCallbackData'
+        'callback_data' => 'getCallbackData',
+        'notify_url' => 'getNotifyUrl'
     ];
 
     /**
@@ -203,6 +207,7 @@ class WhatsappMessageMessages implements ModelInterface
         $this->container['message_id'] = $data['message_id'] ?? null;
         $this->container['content'] = $data['content'] ?? null;
         $this->container['callback_data'] = $data['callback_data'] ?? null;
+        $this->container['notify_url'] = $data['notify_url'] ?? null;
     }
 
     /**
@@ -348,6 +353,31 @@ class WhatsappMessageMessages implements ModelInterface
 
         return $this;
     }
+
+    /**
+     * Gets notify_url
+     *
+     * @return string|null
+     */
+    public function getNotifyUrl()
+    {
+        return $this->container['notify_url'];
+    }
+
+    /**
+     * Sets notify_url
+     *
+     * @param string|null $notify_url notify_url
+     *
+     * @return self
+     */
+    public function setNotifyUrl($notify_url)
+    {
+        $this->container['notify_url'] = $notify_url;
+
+        return $this;
+    }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
