@@ -47,17 +47,17 @@ class WhatsappMessageMessages implements ModelInterface
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'whatsapp_message_messages';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'from' => 'string',
         'to' => 'string',
@@ -68,12 +68,12 @@ class WhatsappMessageMessages implements ModelInterface
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     * @phpstan-var array<string, string|null>
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'from' => null,
         'to' => null,
@@ -115,7 +115,7 @@ class WhatsappMessageMessages implements ModelInterface
         'message_id' => 'messageId',
         'content' => 'content',
         'callback_data' => 'callbackData',
-        'notify_url' => 'setNotifyUrl'
+        'notify_url' => 'notifyUrl'
     ];
 
     /**
@@ -440,7 +440,7 @@ class WhatsappMessageMessages implements ModelInterface
      */
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
